@@ -1,20 +1,28 @@
 {
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "1314DBC80CCF147331DCB14457FD7EA973B2B7CF",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "9CF6181E3789E3853840089C16D4B9FDDB9B31E2" : 9223372036854775807,
+    "1314DBC80CCF147331DCB14457FD7EA973B2B7CF" : 9223372036854775807,
     "6BBB14D18404D37303A51A25CEF2D4EDDAFF0564" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7AF3A499-8CF0-422F-8B98-3B5407DCF466",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "9CF6181E3789E3853840089C16D4B9FDDB9B31E2" : "hackpack-researchkit\/hackpack-research\/ResearchKit\/",
+    "1314DBC80CCF147331DCB14457FD7EA973B2B7CF" : "hackpack-researchkit\/",
     "6BBB14D18404D37303A51A25CEF2D4EDDAFF0564" : "hackpack-researchkit\/hackpack-research\/CareKit\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "hackpack-research",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
   "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "hackpack-research\/hackpack-research.xcodeproj",
   "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/TreeHacks\/hackpack-researchkit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1314DBC80CCF147331DCB14457FD7EA973B2B7CF"
+    },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/carekit-apple\/CareKit.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",

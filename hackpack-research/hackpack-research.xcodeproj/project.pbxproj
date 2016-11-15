@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD43A8EB1DDAAFC300C4B759 /* TasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD43A8EA1DDAAFC300C4B759 /* TasksViewController.swift */; };
 		AD7878411DD45D6400D5B6E5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD78783E1DD45D3B00D5B6E5 /* ResearchKit.framework */; };
 		AD7878421DD45D6400D5B6E5 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD78783E1DD45D3B00D5B6E5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD7878451DD45D6900D5B6E5 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7878341DD45D3400D5B6E5 /* CareKit.framework */; };
@@ -99,6 +100,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AD43A8EA1DDAAFC300C4B759 /* TasksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksViewController.swift; sourceTree = "<group>"; };
 		AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = CareKit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		AD7878371DD45D3B00D5B6E5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */,
 				ADDCABD71DD4390200F31CC9 /* ViewController.swift */,
 				AD7878521DD4649600D5B6E5 /* FirstViewController.swift */,
+				AD43A8EA1DDAAFC300C4B759 /* TasksViewController.swift */,
 				AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */,
 				AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */,
 				AD7878501DD4646800D5B6E5 /* SurveyTask.swift */,
@@ -406,6 +409,7 @@
 				ADDCABD81DD4390200F31CC9 /* ViewController.swift in Sources */,
 				AD78784F1DD4644700D5B6E5 /* ConsentTask.swift in Sources */,
 				AD7878511DD4646800D5B6E5 /* SurveyTask.swift in Sources */,
+				AD43A8EB1DDAAFC300C4B759 /* TasksViewController.swift in Sources */,
 				AD7878531DD4649600D5B6E5 /* FirstViewController.swift in Sources */,
 				AD78784D1DD4642400D5B6E5 /* ConsentDocument.swift in Sources */,
 				ADDCABD61DD4390200F31CC9 /* AppDelegate.swift in Sources */,
