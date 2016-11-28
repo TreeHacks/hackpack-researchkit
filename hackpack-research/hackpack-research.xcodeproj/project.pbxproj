@@ -16,6 +16,8 @@
 		AD78784F1DD4644700D5B6E5 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */; };
 		AD7878511DD4646800D5B6E5 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7878501DD4646800D5B6E5 /* SurveyTask.swift */; };
 		AD7878531DD4649600D5B6E5 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7878521DD4649600D5B6E5 /* FirstViewController.swift */; };
+		ADBD82CD1DEBF52E0075444E /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD82CC1DEBF52E0075444E /* HealthKitViewController.swift */; };
+		ADBD82D01DEBF76A0075444E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBD82CF1DEBF76A0075444E /* HealthKit.framework */; };
 		ADDCABD61DD4390200F31CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */; };
 		ADDCABD81DD4390200F31CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCABD71DD4390200F31CC9 /* ViewController.swift */; };
 		ADDCABDB1DD4390200F31CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABD91DD4390200F31CC9 /* Main.storyboard */; };
@@ -107,6 +109,9 @@
 		AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		AD7878501DD4646800D5B6E5 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
 		AD7878521DD4649600D5B6E5 /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		ADBD82CC1DEBF52E0075444E /* HealthKitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthKitViewController.swift; sourceTree = "<group>"; };
+		ADBD82CE1DEBF6B10075444E /* hackpack-research.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "hackpack-research.entitlements"; sourceTree = "<group>"; };
+		ADBD82CF1DEBF76A0075444E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		ADDCABD21DD4390200F31CC9 /* hackpack-research.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackpack-research.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADDCABD71DD4390200F31CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +132,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBD82D01DEBF76A0075444E /* HealthKit.framework in Frameworks */,
 				AD7878451DD45D6900D5B6E5 /* CareKit.framework in Frameworks */,
 				AD7878411DD45D6400D5B6E5 /* ResearchKit.framework in Frameworks */,
 			);
@@ -167,6 +173,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		ADBD82C51DEBF5180075444E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADBD82CF1DEBF76A0075444E /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		ADDCABC91DD4390100F31CC9 = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +190,7 @@
 				ADDCABE91DD4390200F31CC9 /* hackpack-researchTests */,
 				ADDCABF41DD4390200F31CC9 /* hackpack-researchUITests */,
 				ADDCABD31DD4390200F31CC9 /* Products */,
+				ADBD82C51DEBF5180075444E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +207,7 @@
 		ADDCABD41DD4390200F31CC9 /* hackpack-research */ = {
 			isa = PBXGroup;
 			children = (
+				ADBD82CE1DEBF6B10075444E /* hackpack-research.entitlements */,
 				ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */,
 				ADDCABD71DD4390200F31CC9 /* ViewController.swift */,
 				AD7878521DD4649600D5B6E5 /* FirstViewController.swift */,
@@ -199,6 +215,7 @@
 				AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */,
 				AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */,
 				AD7878501DD4646800D5B6E5 /* SurveyTask.swift */,
+				ADBD82CC1DEBF52E0075444E /* HealthKitViewController.swift */,
 				ADDCABD91DD4390200F31CC9 /* Main.storyboard */,
 				ADDCABDC1DD4390200F31CC9 /* Assets.xcassets */,
 				ADDCABDE1DD4390200F31CC9 /* LaunchScreen.storyboard */,
@@ -298,6 +315,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 9DELG42W9Z;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					ADDCABE51DD4390200F31CC9 = {
 						CreatedOnToolsVersion = 8.1;
@@ -411,6 +433,7 @@
 				AD7878511DD4646800D5B6E5 /* SurveyTask.swift in Sources */,
 				AD43A8EB1DDAAFC300C4B759 /* TasksViewController.swift in Sources */,
 				AD7878531DD4649600D5B6E5 /* FirstViewController.swift in Sources */,
+				ADBD82CD1DEBF52E0075444E /* HealthKitViewController.swift in Sources */,
 				AD78784D1DD4642400D5B6E5 /* ConsentDocument.swift in Sources */,
 				ADDCABD61DD4390200F31CC9 /* AppDelegate.swift in Sources */,
 			);
@@ -575,6 +598,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "hackpack-research/hackpack-research.entitlements";
 				DEVELOPMENT_TEAM = 9DELG42W9Z;
 				INFOPLIST_FILE = "hackpack-research/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -589,6 +613,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "hackpack-research/hackpack-research.entitlements";
 				DEVELOPMENT_TEAM = 9DELG42W9Z;
 				INFOPLIST_FILE = "hackpack-research/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
