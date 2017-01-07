@@ -20,6 +20,10 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+    <key>NSHealthShareUsageDescription</key>
+    <string>Need to share healthkit information</string>
+    <key>NSHealthUpdateUsageDescription</key>
+    <string>Need healthkit to track steps</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

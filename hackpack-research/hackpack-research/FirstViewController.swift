@@ -13,16 +13,12 @@ import CareKit
 
 class FirstViewController: UIViewController {
     
-    //@IBOutlet weak var consentLabel: UILabel!
-    //@IBOutlet weak var surveyLabel: UILabel!
-    //@IBOutlet weak var startButton: UIButton!
-    
     var store: OCKCarePlanStore?
     @IBAction func tasksTapped(_ sender: AnyObject) {
         let fileManager = FileManager.default
         
         guard let documentDirectory =   fileManager.urls(for: .documentDirectory, in: .userDomainMask).last else {
-            fatalError("*** Error: Unable to get the document directory! ***")
+            fatalError("Unable to get the document directory")
         }
         
         let storeURL = documentDirectory.appendingPathComponent("MyCareKitStore")
@@ -34,10 +30,10 @@ class FirstViewController: UIViewController {
         store = OCKCarePlanStore(persistenceDirectoryURL: storeURL)
         
         
-        store?.activity(forIdentifier: "Steps") { (success, activityOrNil, errorOrNil) -> Void in
+        store?.activity(forIdentifier: "Wallsits") { (success, activityOrNil, errorOrNil) -> Void in
             guard success else {
                 // perform real error handling here.
-                fatalError("*** An error occurred \(errorOrNil?.localizedDescription) ***")
+                fatalError("An error occurred \(errorOrNil?.localizedDescription)")
             }
             
             if let activity = activityOrNil {
@@ -48,20 +44,20 @@ class FirstViewController: UIViewController {
                 let startDay = NSDateComponents(year: 2016, month: 3, day: 15)
                 let twiceADay = OCKCareSchedule.dailySchedule(withStartDate: startDay as DateComponents, occurrencesPerDay: 2)
                 let medication = OCKCarePlanActivity(
-                    identifier: "Steps",
+                    identifier: "Wallsits",
                     groupIdentifier: nil,
                     type: .intervention,
-                    title: "Steps",
-                    text: "10,000 Steps",
+                    title: "Wallsits",
+                    text: "20 Wallsits",
                     tintColor: nil,
-                    instructions: "Data shows the more you walk the less pain you have and the better quality of living. So step outside and enjoy the fresh air and birds chirping by walking your way to a PAD free life",
+                    instructions: "Wallsits strengthen leg muscle.",
                     imageURL: nil,
                     schedule: twiceADay,
                     resultResettable: true,
                     userInfo: nil)
                 
                 self.store?.add(medication, completion: { (bool, error) in
-                }) // don't know why it wanted self here
+                })
                 
             }
         }
@@ -70,7 +66,7 @@ class FirstViewController: UIViewController {
         let careCardViewController = OCKCareCardViewController(carePlanStore: store!)
         if let nav = self.navigationController {
             nav.pushViewController(careCardViewController, animated: true)
-            print("got it")
+            print("success")
         }
         else{
             print("no nav")
@@ -92,12 +88,10 @@ class FirstViewController: UIViewController {
         taskViewController.view.tintColor = UIColor.blue // pick the color
         present(taskViewController, animated: true, completion: nil)
         isSurvey = true
-        //surveyLabel.backgroundColor = UIColor.blue
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //startButton.alpha = 0.0
         isSurvey = false
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -129,7 +123,7 @@ extension FirstViewController : ORKTaskViewControllerDelegate {
                 // Check if the result is the user's consent signature
                 if let signatureResult =
                     taskViewController.result.stepResult(forStepIdentifier:
-                        "your identifier"
+                        "temp"
                         )?.firstResult as? ORKConsentSignatureResult {
                     if signatureResult.consented {
                         // Got the user signature
@@ -153,7 +147,6 @@ extension FirstViewController : ORKTaskViewControllerDelegate {
         } else {
             //consentLabel.backgroundColor = UIColor.blue
         }
-        print("hello")
     }
     
 }
