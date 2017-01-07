@@ -37,16 +37,8 @@
                                     <action selector="surveyTappedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="y9W-iT-euw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAJ-zb-312">
-                                <rect key="frame" x="16" y="227" width="51" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="CareKit"/>
-                                <connections>
-                                    <action selector="tasksTapped:" destination="BYZ-38-t0r" eventType="touchDown" id="9Xs-gK-3oc"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP4-AQ-Yed">
-                                <rect key="frame" x="16" y="274" width="64" height="30"/>
+                                <rect key="frame" x="16" y="224" width="64" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="HealthKit"/>
                                 <connections>
