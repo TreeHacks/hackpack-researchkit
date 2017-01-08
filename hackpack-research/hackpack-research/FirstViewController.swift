@@ -8,18 +8,21 @@
 
 import Foundation
 import UIKit
+// Uses ResearchKit 1.4 from github repo
 import ResearchKit
 
 
 class FirstViewController: UIViewController {
     
+    // IBAction to connect button to create new consent task
     @IBAction func consentTapped(sender : AnyObject) {
         let taskViewController = ORKTaskViewController(task: ConsentTask, taskRun: nil)
-        taskViewController.view.tintColor = UIColor.blue // pick the color
+        taskViewController.view.tintColor = UIColor.blue // Pick the color
         taskViewController.delegate = self
         present(taskViewController, animated: true, completion: nil)
     }
     
+    // IBAction to connect button to survey
     @IBAction func surveyTapped(sender : AnyObject) {
         let taskViewController = ORKTaskViewController(task: SurveyTask, taskRun: nil)
         taskViewController.delegate = self
@@ -39,6 +42,7 @@ class FirstViewController: UIViewController {
 }
 
 
+// Extends ORKTaskViewController to finish and dismiss instantiated controllers
 extension FirstViewController : ORKTaskViewControllerDelegate {
     
     func taskViewController(
@@ -60,7 +64,7 @@ extension FirstViewController : ORKTaskViewControllerDelegate {
                         "your identifier"
                         )?.firstResult as? ORKConsentSignatureResult {
                     if signatureResult.consented {
-                        // Got the user signature
+                        // User signed
                         
                     }
                 }

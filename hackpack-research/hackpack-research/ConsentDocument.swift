@@ -12,9 +12,11 @@ import ResearchKit
 
 public var ConsentDocument: ORKConsentDocument {
     
+    // Creates new consent document with title
     let consentDocument = ORKConsentDocument()
     consentDocument.title = "Example Consent"
     
+    // Creates consent in-built types
     let consentSectionTypes: [ORKConsentSectionType] = [
         .overview,
         .dataGathering,
@@ -25,6 +27,7 @@ public var ConsentDocument: ORKConsentDocument {
         .withdrawing
     ]
     
+    // Sets text
     let consentSections: [ORKConsentSection] = consentSectionTypes.map { contentSectionType in
         let consentSection = ORKConsentSection(type: contentSectionType)
         if (contentSectionType == ORKConsentSectionType.overview){
@@ -60,6 +63,7 @@ public var ConsentDocument: ORKConsentDocument {
     
     consentDocument.sections = consentSections
     
+    // Add signature
     consentDocument.addSignature(ORKConsentSignature(forPersonWithTitle: nil, dateFormatString: nil, identifier: "ConsentDocumentParticipantSignature"))
     
     

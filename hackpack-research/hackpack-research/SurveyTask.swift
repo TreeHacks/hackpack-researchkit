@@ -11,20 +11,24 @@ import ResearchKit
 
 public var SurveyTask: ORKOrderedTask {
     
+    // Creates variable to keep track of ORKSteps
     var steps = [ORKStep]()
     
+    // Creates instruction steps with title and text
     let instructionStep = ORKInstructionStep(identifier: "IntroStep")
     instructionStep.title = "Basic Information"
     instructionStep.text = "The following will be some basic information about yourself"
     steps += [instructionStep]
     
+    // Initializes format and details
     let nameAnswerFormat = ORKTextAnswerFormat(maximumLength: 20)
     nameAnswerFormat.multipleLines = false
     let nameQuestionStepTitle = "What is your name?"
     let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, answer: nameAnswerFormat)
+    // Adds to steps variable
     steps += [nameQuestionStep]
     
-    //create numbers 1-75
+    //Create numbers 1-75
     var textChoices1 = [ORKTextChoice]()
     for x in 1...75{
         let idx = x-1
@@ -36,9 +40,6 @@ public var SurveyTask: ORKOrderedTask {
     let nameQuestionStep2 = ORKQuestionStep(identifier: "QuestionStep2", title: nameQuestionStepTitle2, answer: nameAnswerFormat2)
     steps += [nameQuestionStep2]
     
-    
-    //let nameAnswerFormat3 = ORKTextAnswerFormat(maximumLength: 20)
-    //nameAnswerFormat3.multipleLines = false
     let nameAnswerFormat3 = ORKHeightAnswerFormat()
     let nameQuestionStepTitle3 = "What is your height?"
     let nameQuestionStep3 = ORKQuestionStep(identifier: "QuestionStep3", title: nameQuestionStepTitle3, answer: nameAnswerFormat3)
@@ -50,6 +51,7 @@ public var SurveyTask: ORKOrderedTask {
     let nameQuestionStep4 = ORKQuestionStep(identifier: "QuestionStep4", title: nameQuestionStepTitle4, answer: nameAnswerFormat4)
     steps += [nameQuestionStep4]
     
+    // Different question types
     let questQuestionStepTitle = "What is your gender?"
     let textChoices = [
         ORKTextChoice(text: "Male", value: 0 as NSCoding & NSCopying & NSObjectProtocol),
