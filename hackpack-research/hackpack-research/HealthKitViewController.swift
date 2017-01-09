@@ -20,6 +20,7 @@ class HealthKitViewController: UIViewController
     }
     
     func checkAvailability() -> Bool {
+        // Checks if healthdata for stepcount and heat and body mass is available from user
         var isAvail = true;
         if HKHealthStore.isHealthDataAvailable() {
             let stepsCount = NSSet(object: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount))
@@ -39,6 +40,7 @@ class HealthKitViewController: UIViewController
     func recentSteps(completion: @escaping (Double, [Double], NSError?) -> ()) {
         let type = HKSampleType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount)
         
+        // Gets date range for last 7 days
         let date = Date()
         let calendar = Calendar.current
         let curryear = calendar.component(.year, from: date)
@@ -63,6 +65,7 @@ class HealthKitViewController: UIViewController
         
         let lastMonth = calendar.date(from: last)!
         
+        // Create query and append to allSteps variable
         let predicate = HKQuery.predicateForSamples(withStart: lastMonth, end: Date(), options: [])
         let query = HKSampleQuery(sampleType: type!, predicate: predicate, limit: 0, sortDescriptors: nil) {
             query, results, error in
@@ -78,15 +81,19 @@ class HealthKitViewController: UIViewController
             completion(steps, allSteps, error as NSError?)
             
         }
+        
+        // Executes query through healthstore
         healthStore.execute(query)
     }
     
+    // Sets label text to steps count
     @IBOutlet var stepCount : UILabel!
     @IBOutlet var avgCount : UILabel!
     @IBAction func getStepCount(sender: AnyObject) {
         var avgStep: Double = 0
         avgStep = avgStep/7
         recentSteps() { steps, allSteps, error in
+            // Uses dispatchqueue for difference in UI thread
             DispatchQueue.main.sync {
                 self.stepCount.text = "Total \(steps) steps"
                 self.avgCount.text = "Avg \(avgStep) steps"
