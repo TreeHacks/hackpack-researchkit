@@ -30,7 +30,7 @@ To begin, let's create a standard XCode project. We want to embed ResearchKit an
 
 ![infoplist](https://cloud.githubusercontent.com/assets/6894456/21839876/0c9ce586-d78f-11e6-855a-0b214b4c08a4.png)
 
-**Step 6:** *(optional)* If you are testing your code in XCode simulator, you have to simulate data from the Health App in order to get results form HealthStore. To do so, run the iPhone simulator, click on the hardware tab home button, then navigate to the Health App. Tap on the category you want, and use the + button to add in data. For example, when getting step count, go to *Activities* to add in different amounts of exercise for different days.
+**Step 6:** *(optional)* If you are testing your code in XCode simulator, you have to simulate data from the Health App in order to get results from HealthStore. To do so, run the iPhone simulator, click on the hardware tab home button, then navigate to the Health App. Tap on the category you want, and use the + button to add in data. For example, when getting step count, go to *Activities* to add in different amounts of exercise for different days.
 
 These steps above install ResearchKit and HealthKit for your Xcode project!
 
