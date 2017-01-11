@@ -80,10 +80,10 @@ class HealthKitViewController: UIViewController
     @IBOutlet var stepCount : UILabel!
     @IBOutlet var avgCount : UILabel!
     @IBAction func getStepCount(sender: AnyObject) {
-        var avgStep: Double = 0
-        avgStep = avgStep/7
         recentSteps() { steps, allSteps, error in
             DispatchQueue.main.sync {
+                var avgStep: Double = 0
+                avgStep = steps/7
                 self.stepCount.text = "\(steps) steps"
                 self.avgCount.text = "\(avgStep) steps"
             }
