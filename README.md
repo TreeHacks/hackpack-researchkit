@@ -2,6 +2,8 @@
 
 In this iOS hackpack we will be tackling on Apple's ResearchKit and Healthkit using Swift 3 and XCode 8. The functions include creating a consent form to request consent from users, distributing a survey form with different types of questions, and access point for the iOS App to collect data from iPhone's Health App.
 
+--------------------------------------------------------------------------------
+
 To begin, let's create a standard XCode project. We want to embed ResearchKit and HealthKit into our iOS App through the steps below.
 
 **Step 1:** To download the latest version of ResearchKit, and type in  Terminal *git clone [https://github.com/ResearchKit/ResearchKit](https://github.com/ResearchKit/ResearchKit)*. The, build the project by running ResearchKit framework.
@@ -23,6 +25,8 @@ To begin, let's create a standard XCode project. We want to embed ResearchKit an
 **Step 6:** *(optional)* If you are testing your code in XCode simulator, you have to simulate data from the Health App in order to get results form HealthStore. To do so, run the iPhone simulator, click on the hardware tab home button, then navigate to the Health App. Tap on the category you want, and use the + button to add in data. For example, when getting step count, go to *Activities* to add in different amounts of exercise for different days.
 
 These steps above install ResearchKit and HealthKit for your Xcode project!
+
+--------------------------------------------------------------------------------
 
 The *master* branch includes the completed code with ResearchKit consent & survey forms as well as HealthKit access & step count. The *starterkit* branch includes the code with comments on each part of the project. 
 
