@@ -84,8 +84,8 @@ class HealthKitViewController: UIViewController
             DispatchQueue.main.sync {
                 var avgStep: Double = 0
                 avgStep = steps/7
-                self.stepCount.text = "\(steps) steps"
-                self.avgCount.text = "\(avgStep) steps"
+                self.stepCount.text = "Avg \(steps) steps"
+                self.avgCount.text = "Total \(avgStep) steps"
             }
             
         };
