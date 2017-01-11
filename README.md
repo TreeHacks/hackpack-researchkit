@@ -18,6 +18,8 @@ To begin, let's create a standard XCode project. We want to embed ResearchKit an
 
 **Step 4:** To use HealthKit, go to *Capabilities* settings and scroll to the bottom to turn on HealthKit access, and it should automatically add it in your project.
 
+![healthkit](https://cloud.githubusercontent.com/assets/6894456/21839857/f3322408-d78e-11e6-8f2c-910e4bee392a.png)
+
 **Step 5:** In your info.plist, right click to open as source code, then paste in:
 ```swift
     <key>NSHealthShareUsageDescription</key>
