@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -41,7 +42,7 @@
                                     <action selector="surveyTappedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="y9W-iT-euw"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
                                 <rect key="frame" x="67" y="177" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -51,7 +52,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
                                 <rect key="frame" x="67" y="320" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -61,7 +62,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
                                 <rect key="frame" x="67" y="462" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -116,29 +117,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Receives step count data from health store and displays average and total amount of the past 7 days' information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qvh-ML-cHU">
+                                <rect key="frame" x="67" y="324" width="240" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7gr-A4-1B4"/>
+                                    <constraint firstAttribute="height" constant="83" id="BTH-Bf-T0g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Avg:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qSa-wL-1s2">
-                                <rect key="frame" x="123" y="248" width="41" height="24"/>
+                                <rect key="frame" x="108" y="251" width="39" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rw9-77-nhv">
-                                <rect key="frame" x="120" y="277" width="53" height="24"/>
+                                <rect key="frame" x="105" y="280" width="46" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mwu-tM-ZrY">
-                                <rect key="frame" x="187" y="249" width="97" height="21"/>
+                                <rect key="frame" x="172" y="252" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CTg-Vg-3aY">
-                                <rect key="frame" x="187" y="275" width="97" height="21"/>
+                                <rect key="frame" x="172" y="278" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -146,6 +157,11 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qvh-ML-cHU" secondAttribute="trailing" constant="52" id="DzK-1Y-bhi"/>
+                            <constraint firstItem="Qvh-ML-cHU" firstAttribute="leading" secondItem="3xU-Pt-GPJ" secondAttribute="leadingMargin" constant="51" id="Qol-n5-p1d"/>
+                            <constraint firstItem="9yO-1T-jEy" firstAttribute="top" secondItem="Qvh-ML-cHU" secondAttribute="bottom" constant="260" id="py3-EE-Mtc"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="avgCount" destination="mwu-tM-ZrY" id="QkK-wX-iAt"/>
