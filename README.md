@@ -14,6 +14,8 @@ To begin, let's create a standard XCode project. We want to embed ResearchKit an
 
 **Step 3:** Go to *General* settings on your project and scroll down to *Embedded Binaries*. Clik the + button and add in ResearchKit.
 
+![embed](https://cloud.githubusercontent.com/assets/6894456/21839842/d9c05b98-d78e-11e6-9857-5e3a72ee917d.png)
+
 **Step 4:** To use HealthKit, go to *Capabilities* settings and scroll to the bottom to turn on HealthKit access, and it should automatically add it in your project.
 
 **Step 5:** In your info.plist, right click to open as source code, then paste in:
