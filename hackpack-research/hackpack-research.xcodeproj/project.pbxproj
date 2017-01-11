@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		AD7878411DD45D6400D5B6E5 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD78783E1DD45D3B00D5B6E5 /* ResearchKit.framework */; };
 		AD7878421DD45D6400D5B6E5 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD78783E1DD45D3B00D5B6E5 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AD7878451DD45D6900D5B6E5 /* CareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD7878341DD45D3400D5B6E5 /* CareKit.framework */; };
-		AD7878461DD45D6900D5B6E5 /* CareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AD7878341DD45D3400D5B6E5 /* CareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD78784D1DD4642400D5B6E5 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */; };
 		AD78784F1DD4644700D5B6E5 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */; };
 		AD7878511DD4646800D5B6E5 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7878501DD4646800D5B6E5 /* SurveyTask.swift */; };
@@ -18,7 +16,6 @@
 		ADBD82CD1DEBF52E0075444E /* HealthKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADBD82CC1DEBF52E0075444E /* HealthKitViewController.swift */; };
 		ADBD82D01DEBF76A0075444E /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBD82CF1DEBF76A0075444E /* HealthKit.framework */; };
 		ADDCABD61DD4390200F31CC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */; };
-		ADDCABD81DD4390200F31CC9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCABD71DD4390200F31CC9 /* ViewController.swift */; };
 		ADDCABDB1DD4390200F31CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABD91DD4390200F31CC9 /* Main.storyboard */; };
 		ADDCABDD1DD4390200F31CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABDC1DD4390200F31CC9 /* Assets.xcassets */; };
 		ADDCABE01DD4390200F31CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABDE1DD4390200F31CC9 /* LaunchScreen.storyboard */; };
@@ -27,20 +24,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AD7878331DD45D3400D5B6E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8605A5BA1C4F04EC00DD65FF;
-			remoteInfo = CareKit;
-		};
-		AD7878351DD45D3400D5B6E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8605A5C41C4F04EC00DD65FF;
-			remoteInfo = CareKitTests;
-		};
 		AD78783D1DD45D3B00D5B6E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AD7878371DD45D3B00D5B6E5 /* ResearchKit.xcodeproj */;
@@ -61,13 +44,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = B183A4731A8535D100C76870;
 			remoteInfo = ResearchKit;
-		};
-		AD7878471DD45D6900D5B6E5 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8605A5B91C4F04EC00DD65FF;
-			remoteInfo = CareKit;
 		};
 		ADDCABE71DD4390200F31CC9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -92,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				AD7878461DD45D6900D5B6E5 /* CareKit.framework in Embed Frameworks */,
 				AD7878421DD45D6400D5B6E5 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -101,7 +76,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CareKit.xcodeproj; path = CareKit/CareKit.xcodeproj; sourceTree = "<group>"; };
 		AD7878371DD45D3B00D5B6E5 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
@@ -112,7 +86,6 @@
 		ADBD82CF1DEBF76A0075444E /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		ADDCABD21DD4390200F31CC9 /* hackpack-research.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackpack-research.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADDCABD71DD4390200F31CC9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADDCABDA1DD4390200F31CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADDCABDC1DD4390200F31CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADDCABDF1DD4390200F31CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -131,7 +104,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBD82D01DEBF76A0075444E /* HealthKit.framework in Frameworks */,
-				AD7878451DD45D6900D5B6E5 /* CareKit.framework in Frameworks */,
 				AD7878411DD45D6400D5B6E5 /* ResearchKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -153,15 +125,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AD78782E1DD45D3400D5B6E5 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				AD7878341DD45D3400D5B6E5 /* CareKit.framework */,
-				AD7878361DD45D3400D5B6E5 /* CareKitTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		AD7878381DD45D3B00D5B6E5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +146,6 @@
 			isa = PBXGroup;
 			children = (
 				AD7878371DD45D3B00D5B6E5 /* ResearchKit.xcodeproj */,
-				AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */,
 				ADDCABD41DD4390200F31CC9 /* hackpack-research */,
 				ADDCABE91DD4390200F31CC9 /* hackpack-researchTests */,
 				ADDCABF41DD4390200F31CC9 /* hackpack-researchUITests */,
@@ -207,7 +169,6 @@
 			children = (
 				ADBD82CE1DEBF6B10075444E /* hackpack-research.entitlements */,
 				ADDCABD51DD4390200F31CC9 /* AppDelegate.swift */,
-				ADDCABD71DD4390200F31CC9 /* ViewController.swift */,
 				AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */,
 				AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */,
 				AD7878501DD4646800D5B6E5 /* SurveyTask.swift */,
@@ -255,7 +216,6 @@
 			);
 			dependencies = (
 				AD7878441DD45D6400D5B6E5 /* PBXTargetDependency */,
-				AD7878481DD45D6900D5B6E5 /* PBXTargetDependency */,
 			);
 			name = "hackpack-research";
 			productName = "hackpack-research";
@@ -345,10 +305,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = AD78782E1DD45D3400D5B6E5 /* Products */;
-					ProjectRef = AD78782D1DD45D3400D5B6E5 /* CareKit.xcodeproj */;
-				},
-				{
 					ProductGroup = AD7878381DD45D3B00D5B6E5 /* Products */;
 					ProjectRef = AD7878371DD45D3B00D5B6E5 /* ResearchKit.xcodeproj */;
 				},
@@ -363,20 +319,6 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		AD7878341DD45D3400D5B6E5 /* CareKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CareKit.framework;
-			remoteRef = AD7878331DD45D3400D5B6E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		AD7878361DD45D3400D5B6E5 /* CareKitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CareKitTests.xctest;
-			remoteRef = AD7878351DD45D3400D5B6E5 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		AD78783E1DD45D3B00D5B6E5 /* ResearchKit.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
@@ -425,7 +367,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADDCABD81DD4390200F31CC9 /* ViewController.swift in Sources */,
 				AD78784F1DD4644700D5B6E5 /* ConsentTask.swift in Sources */,
 				AD7878511DD4646800D5B6E5 /* SurveyTask.swift in Sources */,
 				ADBD82CD1DEBF52E0075444E /* HealthKitViewController.swift in Sources */,
@@ -458,11 +399,6 @@
 			isa = PBXTargetDependency;
 			name = ResearchKit;
 			targetProxy = AD7878431DD45D6400D5B6E5 /* PBXContainerItemProxy */;
-		};
-		AD7878481DD45D6900D5B6E5 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CareKit;
-			targetProxy = AD7878471DD45D6900D5B6E5 /* PBXContainerItemProxy */;
 		};
 		ADDCABE81DD4390200F31CC9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;

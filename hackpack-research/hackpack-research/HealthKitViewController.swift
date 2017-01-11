@@ -19,22 +19,18 @@ class HealthKitViewController: UIViewController
         getStepCount(sender: self)
     }
     
-    func checkAvailability() -> Bool {
+    func checkAvailability() {
         // Checks if healthdata for stepcount and heat and body mass is available from user
-        var isAvail = true;
         if HKHealthStore.isHealthDataAvailable() {
             let stepsCount = NSSet(object: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount))
             let sharedObjects = NSSet(objects: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height),HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass))
             
             healthStore.requestAuthorization(toShare: sharedObjects as? Set<HKSampleType>, read: stepsCount as? Set<HKObjectType>, completion: { (success, err) in
-                isAvail = success
                 self.getStepCount(sender: self)
             })
             
         } else {
-            isAvail = false
         }
-        return isAvail
     }
     
     func recentSteps(completion: @escaping (Double, [Double], NSError?) -> ()) {
@@ -63,10 +59,10 @@ class HealthKitViewController: UIViewController
                                   weekOfYear: nil,
                                   yearForWeekOfYear: nil)
         
-        let lastMonth = calendar.date(from: last)!
+        let dates = calendar.date(from: last)!
         
         // Create query and append to allSteps variable
-        let predicate = HKQuery.predicateForSamples(withStart: lastMonth, end: Date(), options: [])
+        let predicate = HKQuery.predicateForSamples(withStart: dates, end: Date(), options: [])
         let query = HKSampleQuery(sampleType: type!, predicate: predicate, limit: 0, sortDescriptors: nil) {
             query, results, error in
             var steps: Double = 0
@@ -90,11 +86,11 @@ class HealthKitViewController: UIViewController
     @IBOutlet var stepCount : UILabel!
     @IBOutlet var avgCount : UILabel!
     @IBAction func getStepCount(sender: AnyObject) {
-        var avgStep: Double = 0
-        avgStep = avgStep/7
         recentSteps() { steps, allSteps, error in
             // Uses dispatchqueue for difference in UI thread
             DispatchQueue.main.sync {
+                var avgStep: Double = 0
+                avgStep = steps/7
                 self.stepCount.text = "Total \(steps) steps"
                 self.avgCount.text = "Avg \(avgStep) steps"
             }

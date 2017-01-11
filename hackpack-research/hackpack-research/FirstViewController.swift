@@ -26,7 +26,7 @@ class FirstViewController: UIViewController {
     @IBAction func surveyTapped(sender : AnyObject) {
         let taskViewController = ORKTaskViewController(task: SurveyTask, taskRun: nil)
         taskViewController.delegate = self
-        taskViewController.view.tintColor = UIColor.blue // pick the color
+        taskViewController.view.tintColor = UIColor.blue // Pick the color
         present(taskViewController, animated: true, completion: nil)
     }
     
