@@ -25,6 +25,10 @@ class HealthKitViewController: UIViewController
             let stepsCount = NSSet(object: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount))
             let sharedObjects = NSSet(objects: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height),HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass))
             
+            /*
+                Insert your own code here to request access to other information from HealthStore aside from step count, height, and body mass! You can test this in simulator by deleting the App from iPhone and re-building it.
+            */
+            
             healthStore.requestAuthorization(toShare: sharedObjects as? Set<HKSampleType>, read: stepsCount as? Set<HKObjectType>, completion: { (success, err) in
                 self.getStepCount(sender: self)
             })
@@ -93,6 +97,11 @@ class HealthKitViewController: UIViewController
                 avgStep = steps/7
                 self.stepCount.text = "Total \(steps) steps"
                 self.avgCount.text = "Avg \(avgStep) steps"
+                
+                /*
+                    You can display the information given from the HealthApp differently here or alter it as you will!
+                */
+                
             }
             
         };

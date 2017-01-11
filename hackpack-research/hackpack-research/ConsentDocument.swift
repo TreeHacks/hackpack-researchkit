@@ -38,26 +38,9 @@ public var ConsentDocument: ORKConsentDocument {
             consentSection.summary = "We will primarily be tracking your activity levels"
             consentSection.content = "In this study you will be asked to submit exercise information."
         }
-        if (contentSectionType == ORKConsentSectionType.privacy){
-            consentSection.summary = "We will not be sharing your data with anyone outside our team"
-            consentSection.content = "In this study you will be asked to submit exercise information."
-        }
-        if (contentSectionType == ORKConsentSectionType.dataUse){
-            consentSection.summary = "Data will be used to inform your physician and motivate you "
-            consentSection.content = "In this study you will be asked to submit exercise information."
-        }
-        if (contentSectionType == ORKConsentSectionType.studySurvey){
-            consentSection.summary = "To understand your results, we ask you to complete a questionnaire on your health history and physical condition."
-            consentSection.content = "In this study you will be asked to submit exercise information."
-        }
-        if (contentSectionType == ORKConsentSectionType.studyTasks){
-            consentSection.summary = "As part of the study you will receive occasional notifications in regards to your activity."
-            consentSection.content = "In this study you will be asked to submit exercise information."
-        }
-        if (contentSectionType == ORKConsentSectionType.withdrawing){
-            consentSection.summary = "You can withdraw from the study and stop receiving notifications at any time."
-            consentSection.content = "In this study you will be asked to submit exercise information."
-        }
+        /* 
+         Insert your own code here that creates the summary and content for .privacy,.dataUse,.studySurvey,.studyTasks,.withdrawing!
+        */
         return consentSection
     }
     
