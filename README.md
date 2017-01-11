@@ -36,7 +36,7 @@ These steps above install ResearchKit and HealthKit for your Xcode project!
 
 --------------------------------------------------------------------------------
 
-The *master* branch includes the completed code with ResearchKit consent & survey forms as well as HealthKit access & step count. The *starterkit* branch includes the code with comments on each part of the project. 
+The *master* branch includes the completed code with ResearchKit consent & survey forms as well as HealthKit access & step count. The *starterkit* branch includes the code with comments and parts for you to add on/customize yourself for each part of the project. 
 
 **Main.storyboard** creates navigation controller, buttons to link to functions for Consent, Survey, and Steps Count, textboxes to describe uses, and a separate view controller for HealthKit data. Buttons and textboxes are aligns to fit every spec of iPhone product.
 
