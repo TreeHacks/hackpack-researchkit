@@ -41,7 +41,7 @@
                                     <action selector="surveyTappedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="y9W-iT-euw"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
                                 <rect key="frame" x="67" y="177" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -51,7 +51,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
                                 <rect key="frame" x="67" y="314" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -61,7 +61,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
                                 <rect key="frame" x="67" y="451" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -136,11 +136,23 @@
                                 <color key="textColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text=" Receives step count data from health store and displays average and total amount of the past 7 days' information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PWs-TC-4cd">
+                                <rect key="frame" x="67" y="321" width="240" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="7ID-0O-jhF"/>
+                                    <constraint firstAttribute="width" constant="240" id="Chq-6i-2u6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qSa-wL-1s2" firstAttribute="centerX" secondItem="3xU-Pt-GPJ" secondAttribute="centerX" id="1Dd-go-aSg"/>
                             <constraint firstItem="qSa-wL-1s2" firstAttribute="top" secondItem="yCS-BU-u9r" secondAttribute="bottom" constant="184" id="9DY-xb-d5p"/>
+                            <constraint firstItem="PWs-TC-4cd" firstAttribute="centerX" secondItem="Rw9-77-nhv" secondAttribute="centerX" id="bVw-lR-821"/>
+                            <constraint firstItem="PWs-TC-4cd" firstAttribute="top" secondItem="Rw9-77-nhv" secondAttribute="bottom" constant="23" id="hi5-Pt-KtY"/>
                             <constraint firstItem="Rw9-77-nhv" firstAttribute="top" secondItem="qSa-wL-1s2" secondAttribute="bottom" constant="8" id="m95-l6-ce1"/>
                             <constraint firstItem="Rw9-77-nhv" firstAttribute="centerX" secondItem="qSa-wL-1s2" secondAttribute="centerX" id="nd2-8d-CZG"/>
                         </constraints>
