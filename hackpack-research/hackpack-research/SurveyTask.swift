@@ -24,7 +24,6 @@ public var SurveyTask: ORKOrderedTask {
     let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, answer: nameAnswerFormat)
     steps += [nameQuestionStep]
     
-    //create numbers 1-75
     var textChoices1 = [ORKTextChoice]()
     for x in 1...75{
         let idx = x-1
@@ -36,9 +35,6 @@ public var SurveyTask: ORKOrderedTask {
     let nameQuestionStep2 = ORKQuestionStep(identifier: "QuestionStep2", title: nameQuestionStepTitle2, answer: nameAnswerFormat2)
     steps += [nameQuestionStep2]
     
-    
-    //let nameAnswerFormat3 = ORKTextAnswerFormat(maximumLength: 20)
-    //nameAnswerFormat3.multipleLines = false
     let nameAnswerFormat3 = ORKHeightAnswerFormat()
     let nameQuestionStepTitle3 = "What is your height?"
     let nameQuestionStep3 = ORKQuestionStep(identifier: "QuestionStep3", title: nameQuestionStepTitle3, answer: nameAnswerFormat3)

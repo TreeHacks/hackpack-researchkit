@@ -51,21 +51,17 @@ extension FirstViewController : ORKTaskViewControllerDelegate {
             NSLog("Error: \(error)")
         }
         else {
-            // Handle results with taskViewController.result
             switch reason {
             case .completed:
-                // Check if the result is the user's consent signature
                 if let signatureResult =
                     taskViewController.result.stepResult(forStepIdentifier:
                         "your identifier"
                         )?.firstResult as? ORKConsentSignatureResult {
                     if signatureResult.consented {
-                        // Got the user signature
                         
                     }
                 }
                 else {
-                    // Survey forms
                 }
                 
             default: break

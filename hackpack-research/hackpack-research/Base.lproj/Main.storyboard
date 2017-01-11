@@ -21,9 +21,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-2v-dpb">
-                                <rect key="frame" x="151" y="147" width="72" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-2v-dpb">
+                                <rect key="frame" x="153" y="147" width="68" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Consent">
                                     <color key="titleColor" red="1" green="0.13581426055763246" blue="0.51261086322317961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,9 +31,8 @@
                                     <action selector="consentTappedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="nat-lc-eLg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whu-1z-Yrl">
-                                <rect key="frame" x="155" y="276" width="64" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whu-1z-Yrl">
+                                <rect key="frame" x="158.5" y="286" width="57" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Survey">
                                     <color key="titleColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -43,9 +41,38 @@
                                     <action selector="surveyTappedWithSender:" destination="BYZ-38-t0r" eventType="touchDown" id="y9W-iT-euw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP4-AQ-Yed">
-                                <rect key="frame" x="137" y="407" width="100" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
+                                <rect key="frame" x="67" y="177" width="240" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="KaB-Yl-lIl"/>
+                                    <constraint firstAttribute="height" constant="83" id="oqb-Wn-bvi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
+                                <rect key="frame" x="67" y="320" width="240" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="Vna-Hk-82V"/>
+                                    <constraint firstAttribute="width" constant="240" id="tuI-cd-w6d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
+                                <rect key="frame" x="67" y="462" width="240" height="83"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="cX2-wJ-i0t"/>
+                                    <constraint firstAttribute="height" constant="83" id="uPI-wB-UFW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP4-AQ-Yed">
+                                <rect key="frame" x="137" y="429" width="100" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Steps Count">
                                     <color key="titleColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -54,29 +81,22 @@
                                     <segue destination="GLY-WB-lrM" kind="show" id="Myh-uI-lLZ"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
-                                <rect key="frame" x="67" y="177" width="240" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
-                                <rect key="frame" x="67" y="314" width="240" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
-                                <rect key="frame" x="67" y="451" width="240" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="fiL-2v-dpb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="83" id="4Ua-vT-Q5F"/>
+                            <constraint firstItem="FP4-AQ-Yed" firstAttribute="centerX" secondItem="te6-MM-rJn" secondAttribute="centerX" id="7YK-qJ-bqe"/>
+                            <constraint firstItem="whu-1z-Yrl" firstAttribute="centerX" secondItem="hzP-cK-vtA" secondAttribute="centerX" id="7yp-eP-xEk"/>
+                            <constraint firstItem="whu-1z-Yrl" firstAttribute="top" secondItem="hzP-cK-vtA" secondAttribute="bottom" constant="26" id="J0o-t1-d1B"/>
+                            <constraint firstItem="hzP-cK-vtA" firstAttribute="centerX" secondItem="fiL-2v-dpb" secondAttribute="centerX" id="SAl-zS-weN"/>
+                            <constraint firstItem="mcs-Q7-Az7" firstAttribute="top" secondItem="FP4-AQ-Yed" secondAttribute="bottom" constant="-3" id="XsU-je-mQV"/>
+                            <constraint firstItem="te6-MM-rJn" firstAttribute="centerX" secondItem="whu-1z-Yrl" secondAttribute="centerX" id="bID-Qu-RXp"/>
+                            <constraint firstItem="fiL-2v-dpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c5J-Fm-cvq"/>
+                            <constraint firstItem="hzP-cK-vtA" firstAttribute="top" secondItem="fiL-2v-dpb" secondAttribute="bottom" constant="-6" id="h7O-PH-hTC"/>
+                            <constraint firstItem="te6-MM-rJn" firstAttribute="top" secondItem="whu-1z-Yrl" secondAttribute="bottom" constant="-2" id="mSW-wo-A2a"/>
+                            <constraint firstItem="FP4-AQ-Yed" firstAttribute="top" secondItem="te6-MM-rJn" secondAttribute="bottom" constant="26" id="sAS-mo-7gp"/>
+                            <constraint firstItem="mcs-Q7-Az7" firstAttribute="centerX" secondItem="FP4-AQ-Yed" secondAttribute="centerX" id="t0f-vc-Zq7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0g2-5K-c84"/>
                 </viewController>
