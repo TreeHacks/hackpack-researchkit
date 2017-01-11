@@ -10,6 +10,8 @@ To begin, let's create a standard XCode project. We want to embed ResearchKit an
 
 **Step 2:** Drag *ResearchKit.xcodeproj* into your current iOS project.
 
+![addresearch](https://cloud.githubusercontent.com/assets/6894456/21839806/9a6d44d8-d78e-11e6-8c07-640776371eb2.png)
+
 **Step 3:** Go to *General* settings on your project and scroll down to *Embedded Binaries*. Clik the + button and add in ResearchKit.
 
 **Step 4:** To use HealthKit, go to *Capabilities* settings and scroll to the bottom to turn on HealthKit access, and it should automatically add it in your project.
