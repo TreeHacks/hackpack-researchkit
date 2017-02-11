@@ -1,5 +1,7 @@
 # hackpack-researchkit
 
+[ADVANCED]
+
 In this iOS hackpack we will be tackling on Apple's ResearchKit and Healthkit using Swift 3 and XCode 8. The functions include creating a consent form to request consent from users, distributing a survey form with different types of questions, and access point for the iOS App to collect data from iPhone's Health App.
 
 --------------------------------------------------------------------------------
