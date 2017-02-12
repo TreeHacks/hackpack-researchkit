@@ -8,11 +8,11 @@ In this iOS hackpack we will be tackling on Apple's ResearchKit and Healthkit us
 
 To begin, let's create a standard XCode project. We want to embed ResearchKit and HealthKit into our iOS App through the steps below.
 
-**Step 0:** Please register a developer's account (for HealthKit use)- should take around 5-10 min. [https://developer.apple.com/programs/] Git clone this repository and follow along the steps! 
+**Step 0:** Please register a developer's account (for HealthKit use)- should take around 5-10 min. [https://developer.apple.com/programs/] Git clone this repository and follow along the steps! Use [master] for full solutions and [starterkit] to fill in code.
 
 **Step 1:** To download the latest version of ResearchKit, and type in  Terminal *git clone [https://github.com/ResearchKit/ResearchKit](https://github.com/ResearchKit/ResearchKit)*. Then, tap into the file with .xcodeprj extension and build the project by running ResearchKit framework.
 
-**Step 2:** Drag *ResearchKit.xcodeproj* into your current iOS project and copy items if needed.
+**Step 2:** Drag *ResearchKit.xcodeproj* into your current iOS project and copy items if needed. If you do not see an arrow by ResearchKit after dragging it in, either wait for it to load, or reopen the project. 
 
 ![addresearch](https://cloud.githubusercontent.com/assets/6894456/21839806/9a6d44d8-d78e-11e6-8c07-640776371eb2.png)
 
