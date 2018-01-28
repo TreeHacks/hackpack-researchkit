@@ -2,9 +2,9 @@
 
 [MEDIUM-ADVANCED]
 
-Requires Mac & XCode 7.0
+Requires Mac & XCode 9+
 
-In this iOS hackpack we will be tackling on Apple's ResearchKit and Healthkit using Swift 3 and XCode 8. The functions include creating a consent form to request consent from users, distributing a survey form with different types of questions, and access point for the iOS App to collect data from iPhone's Health App.
+In this iOS hackpack we will be tackling on Apple's ResearchKit and Healthkit using Swift 4 and XCode 9. The functions include creating a consent form to request consent from users, distributing a survey form with different types of questions, and access point for the iOS App to collect data from iPhone's Health App.
 
 --------------------------------------------------------------------------------
 
@@ -12,7 +12,7 @@ To begin, let's create a standard XCode project. We want to embed ResearchKit an
 
 **Step 0:** Please register a developer's account (for HealthKit use)- should take around 5-10 min. [https://developer.apple.com/programs/] Git clone this repository and follow along the steps! Use [master] for full solutions and [starterkit] to fill in code.
 
-**Step 1:** To download the latest version of ResearchKit, and type in  Terminal *git clone [https://github.com/ResearchKit/ResearchKit](https://github.com/ResearchKit/ResearchKit)*. Then, tap into the file with .xcodeprj extension and build the project by running ResearchKit framework.
+**Step 1:** To download the latest version of ResearchKit, and type in  Terminal *git clone -b stable [https://github.com/ResearchKit/ResearchKit.git](https://github.com/ResearchKit/ResearchKit)*. Then, tap into the file with .xcodeprj extension and build the project by running ResearchKit framework.
 
 **Step 2:** Drag *ResearchKit.xcodeproj* into your current iOS project and copy items if needed. If you do not see an arrow by ResearchKit after dragging it in, either wait for it to load, or close and reopen the project. 
 
@@ -104,4 +104,4 @@ and creating a query for HealthStore to execute looks like this:
         healthStore.execute(query)
 ```
 
-These are some of the functionalities of Swift 3 & XCode 8 with ResearchKit and HealthKit. You can easily customize these items and save information to utilize in other parts of the iOS App to create a healthcare hack!
+These are some of the functionalities of Swift 4 & XCode 9 with ResearchKit and HealthKit. You can easily customize these items and save information to utilize in other parts of the iOS App to create a healthcare hack!

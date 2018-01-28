@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2553a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Zg-bx-Cxs">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="6Zg-bx-Cxs">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--First View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -18,11 +23,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fiL-2v-dpb">
-                                <rect key="frame" x="153" y="147" width="68" height="36"/>
+                                <rect key="frame" x="153.66666666666666" y="171" width="68" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Consent">
                                     <color key="titleColor" red="1" green="0.13581426055763246" blue="0.51261086322317961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -32,7 +37,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whu-1z-Yrl">
-                                <rect key="frame" x="158.5" y="286" width="57" height="36"/>
+                                <rect key="frame" x="159.33333333333334" y="310" width="57" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Survey">
                                     <color key="titleColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -42,7 +47,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="ResearchKit 1.4 provides in-built consent form with a summary page at the end for simple healthcare research" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzP-cK-vtA">
-                                <rect key="frame" x="67" y="177" width="240" height="83"/>
+                                <rect key="frame" x="67.666666666666686" y="201" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="KaB-Yl-lIl"/>
@@ -52,7 +57,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="The survey form is also part of ResearchKit 1.4, which allows for customizable questions to track user information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="te6-MM-rJn">
-                                <rect key="frame" x="67" y="320" width="240" height="83"/>
+                                <rect key="frame" x="67.666666666666686" y="344" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="Vna-Hk-82V"/>
@@ -62,7 +67,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="HealthKit requests information from user's Health App, and can access that data through Healthstore" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcs-Q7-Az7">
-                                <rect key="frame" x="67" y="462" width="240" height="83"/>
+                                <rect key="frame" x="67.666666666666686" y="486" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="240" id="cX2-wJ-i0t"/>
@@ -72,7 +77,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FP4-AQ-Yed">
-                                <rect key="frame" x="137" y="429" width="100" height="36"/>
+                                <rect key="frame" x="137.66666666666666" y="453" width="100" height="36"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <state key="normal" title="Steps Count">
                                     <color key="titleColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -113,35 +118,34 @@
                         <viewControllerLayoutGuide type="bottom" id="9yO-1T-jEy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3xU-Pt-GPJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Avg" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHA-mh-vsd">
-                                <rect key="frame" x="123" y="261" width="129" height="21"/>
+                                <rect key="frame" x="123" y="285" width="129" height="21"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="129" id="Ltd-ZE-A7h"/>
                                     <constraint firstAttribute="height" constant="21" id="TiR-WR-PWb"/>
-                                    <constraint firstAttribute="width" constant="129" id="ssc-sz-8Pg"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kwk-1d-BnC">
-                                <rect key="frame" x="120.5" y="290" width="134" height="21"/>
+                                <rect key="frame" x="120.33333333333331" y="314" width="134" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="134" id="009-fl-oFM"/>
                                     <constraint firstAttribute="height" constant="21" id="0PP-m8-eKQ"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="Cdw-vk-tr9"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <color key="textColor" red="1" green="0.13581426059999999" blue="0.51261086320000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Receives step count data from health store and displays average and total amount of the past 7 days' information" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ir2-6K-swx">
-                                <rect key="frame" x="67" y="333" width="240" height="83"/>
+                                <rect key="frame" x="67" y="357" width="240" height="83"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="ATE-uo-ZdP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="240" id="PbJ-zo-7WD"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="83" id="oAC-fa-t1z"/>
                                     <constraint firstAttribute="width" constant="240" id="w4c-KC-OH9"/>
                                 </constraints>
@@ -151,11 +155,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Kwk-1d-BnC" firstAttribute="centerX" secondItem="ir2-6K-swx" secondAttribute="centerX" id="26x-Ks-rmM"/>
+                            <constraint firstItem="QHA-mh-vsd" firstAttribute="centerX" secondItem="Kwk-1d-BnC" secondAttribute="centerX" id="2Vg-E4-tnw"/>
                             <constraint firstItem="ir2-6K-swx" firstAttribute="top" secondItem="Kwk-1d-BnC" secondAttribute="bottom" constant="22" id="2wu-Er-jDO"/>
                             <constraint firstItem="QHA-mh-vsd" firstAttribute="top" secondItem="yCS-BU-u9r" secondAttribute="bottom" constant="197" id="EKb-vA-ubU"/>
-                            <constraint firstItem="QHA-mh-vsd" firstAttribute="centerX" secondItem="3xU-Pt-GPJ" secondAttribute="centerX" id="KHd-xF-Rbl"/>
-                            <constraint firstItem="Kwk-1d-BnC" firstAttribute="centerX" secondItem="QHA-mh-vsd" secondAttribute="centerX" id="j85-pK-P1n"/>
-                            <constraint firstItem="ir2-6K-swx" firstAttribute="centerX" secondItem="Kwk-1d-BnC" secondAttribute="centerX" id="qr7-cW-YYh"/>
+                            <constraint firstItem="ir2-6K-swx" firstAttribute="centerX" secondItem="3xU-Pt-GPJ" secondAttribute="centerX" id="Sby-6b-zZ8"/>
                             <constraint firstItem="Kwk-1d-BnC" firstAttribute="top" secondItem="QHA-mh-vsd" secondAttribute="bottom" constant="8" id="z5J-Hc-0HD"/>
                         </constraints>
                     </view>
@@ -173,7 +177,7 @@
             <objects>
                 <navigationController id="6Zg-bx-Cxs" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="i2x-vA-hRI">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
