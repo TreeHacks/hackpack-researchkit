@@ -3,7 +3,8 @@
 //  hackpack-research
 //
 //  Created by Joy Hsu on 11/10/16.
-//  Copyright © 2016 Joy Hsu. All rights reserved.
+//  Updated by Olivia Brown on 1/27/18.
+//  Copyright © 2018 TreeHacks. All rights reserved.
 //
 
 import Foundation

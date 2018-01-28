@@ -3,7 +3,8 @@
 //  hackpack-research
 //
 //  Created by Joy Hsu on 1/7/17.
-//  Copyright © 2017 Joy Hsu. All rights reserved.
+//  Updated by Olivia Brown on 1/27/18.
+//  Copyright © 2018 Olivia Brown. All rights reserved.
 //
 
 import Foundation
@@ -48,7 +49,7 @@ extension FirstViewController : ORKTaskViewControllerDelegate {
         
         print("entering the dismiss function")
         if error != nil {
-            NSLog("Error: \(error)")
+            NSLog("Error: \(String(describing: error))")
         }
         else {
             switch reason {

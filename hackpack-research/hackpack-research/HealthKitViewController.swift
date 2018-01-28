@@ -3,7 +3,8 @@
 //  hackpack-research
 //
 //  Created by Joy Hsu on 11/27/16.
-//  Copyright © 2016 Joy Hsu. All rights reserved.
+//  Updated by Olivia Brown on 1/27/18.
+//  Copyright © 2018 Olivia Brown. All rights reserved.
 //
 
 import Foundation
@@ -21,8 +22,8 @@ class HealthKitViewController: UIViewController
     
     func checkAvailability() {
         if HKHealthStore.isHealthDataAvailable() {
-            let stepsCount = NSSet(object: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount))
-            let sharedObjects = NSSet(objects: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height),HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass))
+            let stepsCount = NSSet(object: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.stepCount) as Any)
+            let sharedObjects = NSSet(objects: HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.height) as Any,HKQuantityType.quantityType(forIdentifier: HKQuantityTypeIdentifier.bodyMass) as Any)
             
             healthStore.requestAuthorization(toShare: sharedObjects as? Set<HKSampleType>, read: stepsCount as? Set<HKObjectType>, completion: { (success, err) in
                 self.getStepCount(sender: self)
