@@ -22,7 +22,8 @@ public var SurveyTask: ORKOrderedTask {
     let nameAnswerFormat = ORKTextAnswerFormat(maximumLength: 20)
     nameAnswerFormat.multipleLines = false
     let nameQuestionStepTitle = "What is your name?"
-    let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, answer: nameAnswerFormat)
+
+    let nameQuestionStep = ORKQuestionStep(identifier: "QuestionStep", title: nameQuestionStepTitle, question: nil, answer: nameAnswerFormat)
     steps += [nameQuestionStep]
     
     var textChoices1 = [ORKTextChoice]()
@@ -33,18 +34,18 @@ public var SurveyTask: ORKOrderedTask {
     
     let nameAnswerFormat2 = ORKValuePickerAnswerFormat(textChoices:textChoices1)
     let nameQuestionStepTitle2 = "What is your age?"
-    let nameQuestionStep2 = ORKQuestionStep(identifier: "QuestionStep2", title: nameQuestionStepTitle2, answer: nameAnswerFormat2)
+    let nameQuestionStep2 = ORKQuestionStep(identifier: "QuestionStep2", title: nameQuestionStepTitle2, question: nil, answer: nameAnswerFormat2)
     steps += [nameQuestionStep2]
     
     let nameAnswerFormat3 = ORKHeightAnswerFormat()
     let nameQuestionStepTitle3 = "What is your height?"
-    let nameQuestionStep3 = ORKQuestionStep(identifier: "QuestionStep3", title: nameQuestionStepTitle3, answer: nameAnswerFormat3)
+    let nameQuestionStep3 = ORKQuestionStep(identifier: "QuestionStep3", title: nameQuestionStepTitle3, question: nil, answer: nameAnswerFormat3)
     steps += [nameQuestionStep3]
     
     let nameAnswerFormat4 = ORKTextAnswerFormat(maximumLength: 20)
     nameAnswerFormat4.multipleLines = false
     let nameQuestionStepTitle4 = "What is your weight?"
-    let nameQuestionStep4 = ORKQuestionStep(identifier: "QuestionStep4", title: nameQuestionStepTitle4, answer: nameAnswerFormat4)
+    let nameQuestionStep4 = ORKQuestionStep(identifier: "QuestionStep4", title: nameQuestionStepTitle4, question: nil, answer: nameAnswerFormat4)
     steps += [nameQuestionStep4]
     
     let questQuestionStepTitle = "What is your gender?"
@@ -54,7 +55,7 @@ public var SurveyTask: ORKOrderedTask {
         ORKTextChoice(text: "Other", value: 2 as NSCoding & NSCopying & NSObjectProtocol)
     ]
     let questAnswerFormat: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: .singleChoice, textChoices: textChoices)
-    let questQuestionStep = ORKQuestionStep(identifier: "TextChoiceQuestionStep", title: questQuestionStepTitle, answer: questAnswerFormat)
+    let questQuestionStep = ORKQuestionStep(identifier: "TextChoiceQuestionStep", title: questQuestionStepTitle, question: nil, answer: questAnswerFormat)
     steps += [questQuestionStep]
     
     let questQuestionStepTitle2 = "Do you have diabetes?"
@@ -63,7 +64,7 @@ public var SurveyTask: ORKOrderedTask {
         ORKTextChoice(text: "No", value: 1 as NSCoding & NSCopying & NSObjectProtocol)
     ]
     let questAnswerFormat2: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: .singleChoice, textChoices: textChoices2)
-    let questQuestionStep2 = ORKQuestionStep(identifier: "TextChoiceQuestionStep2", title: questQuestionStepTitle2, answer: questAnswerFormat2)
+    let questQuestionStep2 = ORKQuestionStep(identifier: "TextChoiceQuestionStep2", title: questQuestionStepTitle2, question: nil, answer: questAnswerFormat2)
     steps += [questQuestionStep2]
     
     let questQuestionStepTitle3 = "Do you have heart disease?"
@@ -72,7 +73,7 @@ public var SurveyTask: ORKOrderedTask {
         ORKTextChoice(text: "No", value: 1 as NSCoding & NSCopying & NSObjectProtocol)
     ]
     let questAnswerFormat3: ORKTextChoiceAnswerFormat = ORKAnswerFormat.choiceAnswerFormat(with: .singleChoice, textChoices: textChoices3)
-    let questQuestionStep3 = ORKQuestionStep(identifier: "TextChoiceQuestionStep3", title: questQuestionStepTitle3, answer: questAnswerFormat3)
+    let questQuestionStep3 = ORKQuestionStep(identifier: "TextChoiceQuestionStep3", title: questQuestionStepTitle3, question: nil, answer: questAnswerFormat3)
     steps += [questQuestionStep3]
     
     let summaryStep = ORKCompletionStep(identifier: "SummaryStep")

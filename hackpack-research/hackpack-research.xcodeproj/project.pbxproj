@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4551A797220E44E300C35792 /* ResearchKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45706FB2220E447900548E39 /* ResearchKit.framework */; };
+		4551A798220E44E300C35792 /* ResearchKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 45706FB2220E447900548E39 /* ResearchKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AD78784D1DD4642400D5B6E5 /* ConsentDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */; };
 		AD78784F1DD4644700D5B6E5 /* ConsentTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */; };
 		AD7878511DD4646800D5B6E5 /* SurveyTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD7878501DD4646800D5B6E5 /* SurveyTask.swift */; };
@@ -17,24 +19,29 @@
 		ADDCABDB1DD4390200F31CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABD91DD4390200F31CC9 /* Main.storyboard */; };
 		ADDCABDD1DD4390200F31CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABDC1DD4390200F31CC9 /* Assets.xcassets */; };
 		ADDCABE01DD4390200F31CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDCABDE1DD4390200F31CC9 /* LaunchScreen.storyboard */; };
-		ADDCABEB1DD4390200F31CC9 /* hackpack_researchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCABEA1DD4390200F31CC9 /* hackpack_researchTests.swift */; };
-		ADDCABF61DD4390200F31CC9 /* hackpack_researchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDCABF51DD4390200F31CC9 /* hackpack_researchUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ADDCABE71DD4390200F31CC9 /* PBXContainerItemProxy */ = {
+		4551A799220E44E300C35792 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ADDCABCA1DD4390100F31CC9 /* Project object */;
+			containerPortal = 45706FAB220E447900548E39 /* ResearchKit.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = ADDCABD11DD4390100F31CC9;
-			remoteInfo = "hackpack-research";
+			remoteGlobalIDString = B183A4731A8535D100C76870;
+			remoteInfo = ResearchKit;
 		};
-		ADDCABF21DD4390200F31CC9 /* PBXContainerItemProxy */ = {
+		45706FB1220E447900548E39 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = ADDCABCA1DD4390100F31CC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADDCABD11DD4390100F31CC9;
-			remoteInfo = "hackpack-research";
+			containerPortal = 45706FAB220E447900548E39 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B183A5951A8535D100C76870;
+			remoteInfo = ResearchKit;
+		};
+		45706FB3220E447900548E39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45706FAB220E447900548E39 /* ResearchKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 86CC8E9A1AC09332001CCD89;
+			remoteInfo = ResearchKitTests;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,6 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				4551A798220E44E300C35792 /* ResearchKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,6 +60,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		45706FAB220E447900548E39 /* ResearchKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ResearchKit.xcodeproj; path = ../../ResearchKit/ResearchKit.xcodeproj; sourceTree = "<group>"; };
 		AD78784C1DD4642400D5B6E5 /* ConsentDocument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentDocument.swift; sourceTree = "<group>"; };
 		AD78784E1DD4644700D5B6E5 /* ConsentTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsentTask.swift; sourceTree = "<group>"; };
 		AD7878501DD4646800D5B6E5 /* SurveyTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurveyTask.swift; sourceTree = "<group>"; };
@@ -65,12 +74,6 @@
 		ADDCABDC1DD4390200F31CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADDCABDF1DD4390200F31CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADDCABE11DD4390200F31CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADDCABE61DD4390200F31CC9 /* hackpack-researchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackpack-researchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADDCABEA1DD4390200F31CC9 /* hackpack_researchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackpack_researchTests.swift; sourceTree = "<group>"; };
-		ADDCABEC1DD4390200F31CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADDCABF11DD4390200F31CC9 /* hackpack-researchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "hackpack-researchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADDCABF51DD4390200F31CC9 /* hackpack_researchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hackpack_researchUITests.swift; sourceTree = "<group>"; };
-		ADDCABF71DD4390200F31CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,27 +81,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4551A797220E44E300C35792 /* ResearchKit.framework in Frameworks */,
 				ADBD82D01DEBF76A0075444E /* HealthKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADDCABE31DD4390200F31CC9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADDCABEE1DD4390200F31CC9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45706FAC220E447900548E39 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				45706FB2220E447900548E39 /* ResearchKit.framework */,
+				45706FB4220E447900548E39 /* ResearchKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		ADBD82C51DEBF5180075444E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,9 +109,8 @@
 		ADDCABC91DD4390100F31CC9 = {
 			isa = PBXGroup;
 			children = (
+				45706FAB220E447900548E39 /* ResearchKit.xcodeproj */,
 				ADDCABD41DD4390200F31CC9 /* hackpack-research */,
-				ADDCABE91DD4390200F31CC9 /* hackpack-researchTests */,
-				ADDCABF41DD4390200F31CC9 /* hackpack-researchUITests */,
 				ADDCABD31DD4390200F31CC9 /* Products */,
 				ADBD82C51DEBF5180075444E /* Frameworks */,
 			);
@@ -122,8 +120,6 @@
 			isa = PBXGroup;
 			children = (
 				ADDCABD21DD4390200F31CC9 /* hackpack-research.app */,
-				ADDCABE61DD4390200F31CC9 /* hackpack-researchTests.xctest */,
-				ADDCABF11DD4390200F31CC9 /* hackpack-researchUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,24 +142,6 @@
 			path = "hackpack-research";
 			sourceTree = "<group>";
 		};
-		ADDCABE91DD4390200F31CC9 /* hackpack-researchTests */ = {
-			isa = PBXGroup;
-			children = (
-				ADDCABEA1DD4390200F31CC9 /* hackpack_researchTests.swift */,
-				ADDCABEC1DD4390200F31CC9 /* Info.plist */,
-			);
-			path = "hackpack-researchTests";
-			sourceTree = "<group>";
-		};
-		ADDCABF41DD4390200F31CC9 /* hackpack-researchUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ADDCABF51DD4390200F31CC9 /* hackpack_researchUITests.swift */,
-				ADDCABF71DD4390200F31CC9 /* Info.plist */,
-			);
-			path = "hackpack-researchUITests";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,47 +157,12 @@
 			buildRules = (
 			);
 			dependencies = (
+				4551A79A220E44E300C35792 /* PBXTargetDependency */,
 			);
 			name = "hackpack-research";
 			productName = "hackpack-research";
 			productReference = ADDCABD21DD4390200F31CC9 /* hackpack-research.app */;
 			productType = "com.apple.product-type.application";
-		};
-		ADDCABE51DD4390200F31CC9 /* hackpack-researchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADDCABFD1DD4390200F31CC9 /* Build configuration list for PBXNativeTarget "hackpack-researchTests" */;
-			buildPhases = (
-				ADDCABE21DD4390200F31CC9 /* Sources */,
-				ADDCABE31DD4390200F31CC9 /* Frameworks */,
-				ADDCABE41DD4390200F31CC9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADDCABE81DD4390200F31CC9 /* PBXTargetDependency */,
-			);
-			name = "hackpack-researchTests";
-			productName = "hackpack-researchTests";
-			productReference = ADDCABE61DD4390200F31CC9 /* hackpack-researchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ADDCABF01DD4390200F31CC9 /* hackpack-researchUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADDCAC001DD4390200F31CC9 /* Build configuration list for PBXNativeTarget "hackpack-researchUITests" */;
-			buildPhases = (
-				ADDCABED1DD4390200F31CC9 /* Sources */,
-				ADDCABEE1DD4390200F31CC9 /* Frameworks */,
-				ADDCABEF1DD4390200F31CC9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADDCABF31DD4390200F31CC9 /* PBXTargetDependency */,
-			);
-			name = "hackpack-researchUITests";
-			productName = "hackpack-researchUITests";
-			productReference = ADDCABF11DD4390200F31CC9 /* hackpack-researchUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -228,33 +171,19 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Joy Hsu";
 				TargetAttributes = {
 					ADDCABD11DD4390100F31CC9 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 8GEKYYW3CQ;
-						LastSwiftMigration = 0920;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 1;
 							};
 						};
-					};
-					ADDCABE51DD4390200F31CC9 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9DELG42W9Z;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = ADDCABD11DD4390100F31CC9;
-					};
-					ADDCABF01DD4390200F31CC9 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 9DELG42W9Z;
-						LastSwiftMigration = 0920;
-						ProvisioningStyle = Automatic;
-						TestTargetID = ADDCABD11DD4390100F31CC9;
 					};
 				};
 			};
@@ -269,14 +198,35 @@
 			mainGroup = ADDCABC91DD4390100F31CC9;
 			productRefGroup = ADDCABD31DD4390200F31CC9 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 45706FAC220E447900548E39 /* Products */;
+					ProjectRef = 45706FAB220E447900548E39 /* ResearchKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ADDCABD11DD4390100F31CC9 /* hackpack-research */,
-				ADDCABE51DD4390200F31CC9 /* hackpack-researchTests */,
-				ADDCABF01DD4390200F31CC9 /* hackpack-researchUITests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		45706FB2220E447900548E39 /* ResearchKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ResearchKit.framework;
+			remoteRef = 45706FB1220E447900548E39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		45706FB4220E447900548E39 /* ResearchKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ResearchKitTests.xctest;
+			remoteRef = 45706FB3220E447900548E39 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ADDCABD01DD4390100F31CC9 /* Resources */ = {
@@ -286,20 +236,6 @@
 				ADDCABE01DD4390200F31CC9 /* LaunchScreen.storyboard in Resources */,
 				ADDCABDD1DD4390200F31CC9 /* Assets.xcassets in Resources */,
 				ADDCABDB1DD4390200F31CC9 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADDCABE41DD4390200F31CC9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADDCABEF1DD4390200F31CC9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,34 +255,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADDCABE21DD4390200F31CC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADDCABEB1DD4390200F31CC9 /* hackpack_researchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADDCABED1DD4390200F31CC9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADDCABF61DD4390200F31CC9 /* hackpack_researchUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ADDCABE81DD4390200F31CC9 /* PBXTargetDependency */ = {
+		4551A79A220E44E300C35792 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ADDCABD11DD4390100F31CC9 /* hackpack-research */;
-			targetProxy = ADDCABE71DD4390200F31CC9 /* PBXContainerItemProxy */;
-		};
-		ADDCABF31DD4390200F31CC9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADDCABD11DD4390100F31CC9 /* hackpack-research */;
-			targetProxy = ADDCABF21DD4390200F31CC9 /* PBXContainerItemProxy */;
+			name = ResearchKit;
+			targetProxy = 4551A799220E44E300C35792 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -383,6 +298,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -390,6 +306,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -441,6 +358,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -448,6 +366,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -487,11 +406,11 @@
 				CODE_SIGN_ENTITLEMENTS = "hackpack-research/hackpack-research.entitlements";
 				DEVELOPMENT_TEAM = 8GEKYYW3CQ;
 				INFOPLIST_FILE = "hackpack-research/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "oliviabrown.hackpack-research";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -503,73 +422,11 @@
 				CODE_SIGN_ENTITLEMENTS = "hackpack-research/hackpack-research.entitlements";
 				DEVELOPMENT_TEAM = 8GEKYYW3CQ;
 				INFOPLIST_FILE = "hackpack-research/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "oliviabrown.hackpack-research";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		ADDCABFE1DD4390200F31CC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9DELG42W9Z;
-				INFOPLIST_FILE = "hackpack-researchTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "joyhsu.hackpack-researchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hackpack-research.app/hackpack-research";
-			};
-			name = Debug;
-		};
-		ADDCABFF1DD4390200F31CC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 9DELG42W9Z;
-				INFOPLIST_FILE = "hackpack-researchTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "joyhsu.hackpack-researchTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hackpack-research.app/hackpack-research";
-			};
-			name = Release;
-		};
-		ADDCAC011DD4390200F31CC9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 9DELG42W9Z;
-				INFOPLIST_FILE = "hackpack-researchUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "joyhsu.hackpack-researchUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "hackpack-research";
-			};
-			name = Debug;
-		};
-		ADDCAC021DD4390200F31CC9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				DEVELOPMENT_TEAM = 9DELG42W9Z;
-				INFOPLIST_FILE = "hackpack-researchUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "joyhsu.hackpack-researchUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
-				SWIFT_VERSION = 4.0;
-				TEST_TARGET_NAME = "hackpack-research";
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -590,24 +447,6 @@
 			buildConfigurations = (
 				ADDCABFB1DD4390200F31CC9 /* Debug */,
 				ADDCABFC1DD4390200F31CC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADDCABFD1DD4390200F31CC9 /* Build configuration list for PBXNativeTarget "hackpack-researchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADDCABFE1DD4390200F31CC9 /* Debug */,
-				ADDCABFF1DD4390200F31CC9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADDCAC001DD4390200F31CC9 /* Build configuration list for PBXNativeTarget "hackpack-researchUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADDCAC011DD4390200F31CC9 /* Debug */,
-				ADDCAC021DD4390200F31CC9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
